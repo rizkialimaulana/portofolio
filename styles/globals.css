@@ -1,3 +1,26 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@font-face {
+    font-family: 'Conthrax';
+    src: url(../assets/fonts/conthrax.ttf) format('truetype');
+}
+@font-face {
+    font-family: 'Louis';
+    src: url(../assets/fonts/Louis.ttf) format('truetype');
+}
+@font-face {
+    font-family: 'Vogue';
+    src: url(../assets/fonts/Vogue.ttf) format('truetype');
+}
+
+@font-face {
+    font-family: 'Stretch';
+    src: url(../assets/fonts/StretchPro.otf);
+}
+
+@font-face {
+    font-family: 'Barcelona';
+    src: url(../assets/fonts/Barcelona.otf);
+}
