@@ -8,7 +8,7 @@ const About = (props: Props) => {
       <h1 className="uppercase text-xl md:text-4xl font-bold font-Stretch">
         My little story
       </h1>
-      <p className="text-xl font-Louis font-bold w-[90%] md:w-[50%] text-justify p-4 bg-gray-500/70">
+      <p className="text-xl font-Louis font-bold w-[90%] md:w-[50%] text-justify p-4 backdrop-blur-lg">
         I'm Rizki Ali Maulana. Just call me Rizki. An Undergraduate from
         Universitas Komputer Indonesia. Addicted with Web Programming for about
         4 years. Really love to design that implemented into programming.

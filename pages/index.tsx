@@ -7,17 +7,17 @@ import Skills from '../components/Skills'
 
 const Home: NextPage = () => {
   return (
-    <div className="h-screen py-2 ">
+    <div className="h-screen scroll-smooth">
       <Head>
         <title>Portofolio</title>
         <link rel="icon" href="/favicon.ico" />
       </Head>
-        <Header />
-        <About />
-        <Skills />
-        <Experiences />
+      <Header />
+      <About />
+      <Skills />
+      <Experiences />
     </div>
-  )
+  );
 }
 
 export default Home
