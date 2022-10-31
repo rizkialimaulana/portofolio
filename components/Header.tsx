@@ -4,7 +4,7 @@ type Props = {}
 
 const Header = (props: Props) => {
   return (
-    <div className="h-screen flex items-center justify-center bg-black text-white">
+    <div className="h-screen bg-fixed flex items-center justify-center bg-black text-white">
       <div className="h-full flex items-center justify-center">
         <div className="flex flex-col items-start md:space-y-12 tracking-[10px] font-Stretch font-bold uppercase text-3xl md:text-[7rem]">
           <h1>Rizki</h1>

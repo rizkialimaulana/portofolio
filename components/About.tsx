@@ -4,7 +4,7 @@ type Props = {}
 
 const About = (props: Props) => {
   return (
-    <div className="h-[20rem] bg-fixed bg-center bg-[url('/bg.jpg')] p-4 text-white flex flex-col items-center justify-center space-y-10">
+    <div className="h-[20rem] animate-ltr-linear-infinite bg-fixed bg-center bg-[url('/bg.jpg')] p-4 text-white flex flex-col items-center justify-center space-y-10">
       <h1 className="uppercase text-xl md:text-4xl font-bold font-Stretch text-[#5eff00]">
         My little story
       </h1>

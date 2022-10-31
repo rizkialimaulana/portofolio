@@ -6,6 +6,15 @@ module.exports = {
   ],
   theme: {
     extend: {
+      animation: {
+        "ltr-linear-infinite": "move-bg 10s linear infinite",
+      },
+      keyframes: {
+        "move-bg": {
+          "0%": { "background-position": "0 0" },
+          "100%": { "background-position": "256px 0" },
+        },
+      },
       fontFamily: {
         Vogue: ["Vogue", "sans-serif"],
         Conthrax: ["Conthrax", "sans-serif"],
