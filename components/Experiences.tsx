@@ -6,8 +6,8 @@ type Props = {}
 
 const Experiences = (props: Props) => {
   return (
-    <div className='h-fit bg-[url("/bg3.jpg")] bg-fixed p-6 text-white flex flex-col items-center justify-center'>
-      <h1 className="font-Stretch uppercase text-6xl">projects</h1>
+    <div className='h-fit md:h-screen bg-[url("/bg3.jpg")] bg-fixed p-6 text-white flex flex-col items-center justify-center'>
+      <h1 className="font-Stretch uppercase text-4xl md:text-6xl">projects</h1>
       <div className="mt-5 flex md:flex-row md:space-x-5 space-y-5 flex-col">
         <div className="w-[25rem] h-[30rem] backdrop-blur-lg p-4 flex flex-col items-center justify-center">
           <h1 className="font-Conthrax text-xl text-blue-400">
@@ -54,7 +54,7 @@ const Experiences = (props: Props) => {
             Airbnb was founded in August 2008 and is headquartered in San
             Francisco, California. This company is owned and operated privately.
           </p>
-          <Link href="https://shopee-clone-d2bjxa2mv-rizkialimaulana.vercel.app/">
+          <Link href="https://airbnb-clone-one-liart.vercel.app/">
             <span>Try Demo</span>
           </Link>
         </div>

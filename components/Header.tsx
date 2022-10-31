@@ -6,7 +6,7 @@ const Header = (props: Props) => {
   return (
     <div className="h-screen flex items-center justify-center bg-black text-white">
       <div className="h-full flex items-center justify-center">
-        <div className="flex flex-col items-start md:space-y-12 tracking-[10px] font-Stretch font-bold uppercase text-5xl md:text-[7rem]">
+        <div className="flex flex-col items-start md:space-y-12 tracking-[10px] font-Stretch font-bold uppercase text-3xl md:text-[7rem]">
           <h1>Rizki</h1>
           <div className="flex flex-row space-x-5 items-center">
             <h1 className="text-[#15ff00]">Ali</h1>
