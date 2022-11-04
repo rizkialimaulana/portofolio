@@ -1,12 +1,28 @@
 import React from 'react'
+import { useViewportScroll, motion, useTransform } from 'framer-motion'
 
 type Props = {}
 
 const Header = (props: Props) => {
+  const { scrollY } = useViewportScroll();
+  const y1 = useTransform(scrollY, [0, 300], [0, 200]);
+  const y2 = useTransform(scrollY, [0, 300], [0, -100]);
+
+  const variants = {
+    visible: { opacity: 1, scale: 1, y: 0 },
+    hidden: {
+      opacity: 0,
+      scale: 0.65,
+      y: 50,
+    },
+  };
   return (
-    <div className="h-screen bg-fixed flex items-center justify-center bg-black text-white">
+    <div className="h-screen bg-fixed flex items-center overflow-hidden justify-center bg-black text-white">
       <div className="h-full flex items-center justify-center">
-        <div className="flex flex-col items-start md:space-y-12 tracking-[10px] font-Stretch font-bold uppercase text-3xl md:text-[7rem]">
+        <motion.div
+          style={{ y: y2 }}
+          className="flex flex-col items-start md:space-y-12 tracking-[10px] font-Stretch font-bold uppercase text-3xl md:text-[7rem]"
+        >
           <h1>Rizki</h1>
           <div className="flex flex-row space-x-5 items-center">
             <h1 className="text-[#15ff00]">Ali</h1>
@@ -19,7 +35,7 @@ const Header = (props: Props) => {
           <h1 className="md:text-stroke-2 text-stroke-2 text-fill-transparent text-stroke-white">
             Maulana
           </h1>
-        </div>
+        </motion.div>
       </div>
     </div>
   );
