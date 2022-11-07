@@ -8,14 +8,23 @@ import {
   SiMongodb,
   SiPostman
 } from "react-icons/si";
-import { GrMysql } from "react-icons/gr";
 
 type Props = {}
 
 const Skills = (props: Props) => {
   return (
-    <div className="h-full bg-black text-white flex flex-col items-center justify-center">
-      
+    <div className="h-full bg-black text-white flex flex-col items-center space-y-10 justify-center">
+      <h1 className='font-Conthrax text-4xl tracking-[10px]'>SKILLS</h1>
+      <div className='flex items-center space-x-5 flex-wrap text-3xl md:text-7xl'>
+        <FaLaravel />
+        <FaReact />
+        <SiNextdotjs />
+        <SiRedux />
+        <FaNodeJs />
+        <FaSass />
+        <SiTailwindcss />
+        <SiMongodb />
+      </div>
     </div>
   );
 }

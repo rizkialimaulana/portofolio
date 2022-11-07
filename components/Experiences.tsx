@@ -10,32 +10,8 @@ const Experiences = (props: Props) => {
     <div className='h-fit md:h-screen animate-ltr-linear-infinite bg-[url("/bg3.jpg")] bg-fixed p-6 text-white flex flex-col items-center justify-center'>
       <h1 className="font-Stretch uppercase text-4xl md:text-6xl">projects</h1>
       <div className="mt-5 flex md:flex-row md:space-x-5 md:space-y-0 space-y-5 flex-col">
-        <div className="border-2 border-gray-600 w-[25rem] h-[30rem] backdrop-blur-lg p-4 space-y-4 flex flex-col items-center justify-center">
-          <h1 className="font-Conthrax text-xl text-blue-400">
-            Study Case : Shopee
-          </h1>
-          <div className="flex flex-row items-center space-x-3 text-lg">
-            <SiNextdotjs className="text-3xl" />
-            <SiRedux className="text-3xl" />
-            <SiTailwindcss className="text-3xl" />
-          </div>
-          <p className="font-Louis">
-            Shopee is a commercial electronic website headquartered in Singapore
-            owned by Sea Limited (formerly known as Garena), which was founded
-            in 2009 by Forrest Li. Shopee was first launched in Singapore in
-            2015, and has since expanded to Malaysia, Thailand, Taiwan,
-            Indonesia, Vietnam and the Philippines. Starting in 2019, Shopee has
-            also been active in Brazil, the first country in South America and
-            outside Asia that Shopee visited.
-          </p>
-          <Link href="https://shopee-clone-d2bjxa2mv-rizkialimaulana.vercel.app/">
-            <span className="py-2 px-4 border border-[#73ff00] transition-all hover:bg-[#73ff00]">
-              Try Demo
-            </span>
-          </Link>
-        </div>
         <div className="w-[25rem] h-[30rem] border border-gray-600 backdrop-blur-lg p-4 space-y-4 flex flex-col items-center justify-center">
-          <h1 className="font-Conthrax text-xl text-blue-400">
+          <h1 className="font-Conthrax text-xl">
             Study Case : Netflix
           </h1>
           <div className="flex flex-row items-center space-x-3 text-lg">
@@ -58,7 +34,7 @@ const Experiences = (props: Props) => {
           </Link>
         </div>
         <div className="w-[25rem] h-[30rem] border border-gray-600 backdrop-blur-lg p-4 space-y-4 flex flex-col items-center justify-center">
-          <h1 className="font-Conthrax text-xl text-blue-400">
+          <h1 className="font-Conthrax text-xl">
             Study Case : Airbnb
           </h1>
           <div className="flex flex-row items-center space-x-3 text-lg">

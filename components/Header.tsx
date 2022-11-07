@@ -1,42 +1,31 @@
+import Image from 'next/image'
 import React from 'react'
-import { useViewportScroll, motion, useTransform } from 'framer-motion'
+import { CgScrollV } from "react-icons/cg";
 
 type Props = {}
 
 const Header = (props: Props) => {
-  const { scrollY } = useViewportScroll();
-  const y1 = useTransform(scrollY, [0, 300], [0, 200]);
-  const y2 = useTransform(scrollY, [0, 300], [0, -100]);
-
-  const variants = {
-    visible: { opacity: 1, scale: 1, y: 0 },
-    hidden: {
-      opacity: 0,
-      scale: 0.65,
-      y: 50,
-    },
-  };
   return (
-    <div className="h-screen bg-fixed flex items-center overflow-hidden justify-center bg-black text-white">
-      <div className="h-full flex items-center justify-center">
-        <motion.div
-          style={{ y: y2 }}
-          className="flex flex-col items-start md:space-y-12 tracking-[10px] font-Stretch font-bold uppercase text-3xl md:text-[7rem]"
-        >
-          <h1>Rizki</h1>
-          <div className="flex flex-row space-x-5 items-center">
-            <h1 className="text-[#15ff00]">Ali</h1>
-            <div className="font-Conthrax flex flex-col items-center text-xs md:text-5xl text-[#49c2fa]">
-              <span>Web Developer</span>
-              <span>QA Engineer</span>
-              <span>Freelancer</span>
-            </div>
-          </div>
-          <h1 className="md:text-stroke-2 text-stroke-2 text-fill-transparent text-stroke-white">
-            Maulana
-          </h1>
-        </motion.div>
+    <div className='h-screen flex flex-col bg-gray-500/30 bg-fixed items-center overflow-hidden justify-center'>
+      <h1 className='font-Stretch text-left w-full px-8 md:px-16 text-xl'>PORTOFOLIOO</h1>
+      <Image
+        src="/profile-removebg.png"
+        alt=""
+        width={450}
+        height={300}
+        className="relative w-[25rem] h-auto"
+      />
+      <div className="absolute z-10 flex h-full items-end justify-between w-full px-8 md:px-16 pb-20">
+        <h1 className="text-4xl md:text-8xl font-Conthrax text-white">
+          Rizki Ali Maulana
+        </h1>
+        <div className="flex flex-col items-start text-lg md:text-3xl font-Stretch text-white">
+          <span>Frontend Developer</span>
+          <span>QA Engineer</span>
+          <span>Freelancer</span>
+        </div>
       </div>
+      <div className="h-full w-full absolute z-1 bg-gradient-to-b from-transparent via-transparent to-black" />
     </div>
   );
 }
