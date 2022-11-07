@@ -12,13 +12,13 @@ const Header = (props: Props) => {
         alt=""
         width={450}
         height={300}
-        className="relative w-[25rem] h-auto"
+        className="relative w-[25rem] h-auto opacity-[0.8] md:opacity-1"
       />
-      <div className="w-full h-full absolute z-10 flex flex-col justify-between">
-        <h1 className="font-Stretch text-left px-8 md:px-16 text-xl">
+      <div className="w-full h-full absolute z-10 md:px-16 px-8 py-10 md:py-14 flex flex-col justify-between">
+        <h1 className="font-Stretch text-left text-xl">
           PORTOFOLIOO
         </h1>
-        <div className="items-end justify-between px-8 md:px-16 pb-20">
+        <div className="md:flex items-center justify-between">
           <h1 className="text-4xl md:text-8xl font-Conthrax text-white">
             Rizki Ali Maulana
           </h1>
