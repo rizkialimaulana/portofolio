@@ -12,6 +12,8 @@ const Home: NextPage = () => {
       <Head>
         <title>Rizki Ali Maulana</title>
         <link rel="icon" href="/favicon.ico" />
+        <meta name="description" content="Portofolio Website of Rizki Ali Maulana" />
+        <meta name="viewport" content="initial-scale=1.0, width=device-width" />
       </Head>
       <Header />
       <About />

@@ -14,7 +14,7 @@ const Header = (props: Props) => {
         height={300}
         className="relative w-[25rem] h-auto opacity-[0.8] md:opacity-1"
       />
-      <div className="w-full h-full absolute z-10 md:px-16 px-8 py-10 md:py-14 flex flex-col justify-between">
+      <div className="w-full h-full absolute z-10 md:px-16 px-8 py-10 md:py-14 flex flex-col items-start justify-between">
         <h1 className="font-Stretch text-left text-xl">
           PORTOFOLIOO
         </h1>
