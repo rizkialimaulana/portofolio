@@ -13,7 +13,7 @@ type Props = {}
 
 const Skills = (props: Props) => {
   return (
-    <div className="h-full bg-black text-white flex flex-col items-center space-y-10 justify-center">
+    <div className="h-screen bg-black text-white flex flex-col items-center space-y-10 justify-center">
       <h1 className='font-Conthrax text-4xl tracking-[10px]'>SKILLS</h1>
       <div className='flex items-center space-x-5 flex-wrap text-3xl md:text-7xl'>
         <FaLaravel />

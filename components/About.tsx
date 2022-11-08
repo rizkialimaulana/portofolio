@@ -5,7 +5,7 @@ type Props = {}
 
 const About = (props: Props) => {
   return (
-    <motion.div className="h-full flex items-center justify-center animate-ltr-linear-infinite bg-fixed bg-center bg-[url('/bg.jpg')] text-white">
+    <motion.div className="h-screen flex items-center justify-center animate-ltr-linear-infinite bg-fixed bg-center bg-[url('/bg.jpg')] text-white">
       <div className='w-full h-full relative z-0 bg-gradient-to-t from-black via-transparent to-black'/>
       <motion.div
         className="flex flex-col items-center justify-center space-y-10 absolute z-10"

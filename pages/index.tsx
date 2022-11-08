@@ -5,8 +5,12 @@ import Contact from '../components/Contact'
 import Experiences from '../components/Experiences'
 import Header from '../components/Header'
 import Skills from '../components/Skills'
+import React, { useRef } from 'react'
 
 const Home: NextPage = () => {
+  const app = useRef()
+  const ScrollContainer = useRef()
+
   return (
     <div className="h-screen scroll-smooth">
       <Head>
@@ -15,11 +19,13 @@ const Home: NextPage = () => {
         <meta name="description" content="Portofolio Website of Rizki Ali Maulana" />
         <meta name="viewport" content="initial-scale=1.0, width=device-width" />
       </Head>
-      <Header />
-      <About />
-      <Skills />
-      <Experiences />
-      <Contact />
+      <main className='overscroll-y-none scroll-smooth'>
+        <Header />
+        <About />
+        <Skills />
+        <Experiences />
+        <Contact />
+      </main>
     </div>
   );
 }
